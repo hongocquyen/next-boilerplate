@@ -1,0 +1,22 @@
+@import 'src/utils/styles/font';
+@import 'src/variables';
+@import 'src/utils/breakpoints';
+
+body {
+  font-family: Montserrat, sans-serif;
+  font-optical-sizing: auto;
+  margin: 0;
+  background: var(--color-white);
+  position: relative;
+}
+
+input,
+button {
+  font-family: Montserrat, sans-serif;
+  font-optical-sizing: auto;
+  @include initConfigureFontSize;
+}
+
+html {
+  @include initConfigureFontSize;
+}
